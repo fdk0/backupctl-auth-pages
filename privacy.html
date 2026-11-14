@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Information about Backupctl, a private owner-operated backup utility, and its use of Google Drive.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Privacy notice — Backupctl</title>
+<style>html{color-scheme:light dark}*{box-sizing:border-box}body{margin:0;font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#202b3a;background:#f6f8fb}main{max-width:760px;margin:64px auto;padding:40px;background:#fff;border:1px solid #dbe2eb;border-radius:16px}header{border-bottom:1px solid #dbe2eb;padding-bottom:20px;margin-bottom:28px}.eyebrow{font-size:.8rem;font-weight:650;text-transform:uppercase;letter-spacing:.12em;color:#536277}h1{font-size:2.25rem;line-height:1.18;letter-spacing:-.035em;margin:.35em 0}h2{font-size:1.15rem;line-height:1.4;margin:1.65em 0 .4em}a{color:#1558b0;text-underline-offset:3px}nav{display:flex;gap:24px;flex-wrap:wrap}footer{border-top:1px solid #dbe2eb;margin-top:32px;padding-top:20px;font-size:.9rem;color:#536277}p,ul{margin:.6em 0 1em}@media(max-width:800px){main{margin:16px;padding:24px;border-radius:12px}h1{font-size:1.9rem}}@media(prefers-color-scheme:dark){body{color:#e3e9f2;background:#111824}main{background:#182231;border-color:#344257}header,footer{border-color:#344257}.eyebrow,footer{color:#aebbd0}a{color:#8abbff}}</style>
+</head>
+<body><main>
+<header><div class="eyebrow">Backupctl</div><h1>Privacy notice</h1><p>Last updated: 14 November 2026</p></header>
+<p>This notice describes Backupctl, a private backup application operated by its owner. It is not a public backup service and does not offer third-party account registration.</p>
+<h2>Data and purpose</h2>
+<p>Backupctl processes the files, directories and recovery material selected by the owner to create backups and support restoration. Backup contents are encrypted locally by Duplicity before rclone uploads the resulting volumes to the owner’s Google Drive. Operational metadata, such as backup timestamps and completion records, can be stored alongside those volumes.</p>
+<h2>Google Drive permissions</h2>
+<p>The integration requests the narrow <code>drive.file</code> scope to create, read, update and delete the backup files and folders it creates. The application is intended to work within its own backup namespace, without browsing unrelated existing Drive files.</p>
+<p>OAuth credentials and authorization tokens are stored on the owner’s system to allow authorized backup operations. They are not published on this website or intended to be shared through repository issues.</p>
+<h2>Storage, access and sharing</h2>
+<p>Backup data is stored in the owner-controlled Google Drive account and local backup working storage. The owner controls access and use. Backupctl does not sell data, run advertising or share backup data for marketing. Google processes data stored on its services under its applicable terms and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<h2>Retention and deletion</h2>
+<p>The owner controls backup retention settings and may delete local or remote backup data. Removing OAuth authorization prevents future authorized access by the application; it does not itself delete backup files already stored in Google Drive. Google Drive’s own deletion and trash behavior also applies.</p>
+<h2>This information website</h2>
+<p>These static pages contain no advertising, analytics scripts, forms or account signup. GitHub Pages hosts the site and may process visitor request information under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. Public repository issues are visible to others.</p>
+<h2>Contact and changes</h2>
+<p>Questions about this application or notice can be raised with the owner through <a href="https://github.com/fdk0/backupctl-auth-pages/issues">the repository’s issue tracker</a>. Do not include tokens, passwords, client secrets, private file contents or backup archives. This notice may be updated when the application’s handling of data changes.</p>
+<nav aria-label="More information"><a href="./">Back to Backupctl</a></nav>
+</main></body>
+</html>
