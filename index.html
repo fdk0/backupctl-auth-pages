@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Information about Backupctl, a private owner-operated backup utility, and its use of Google Drive.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Backupctl — private backup utility</title>
+<style>html{color-scheme:light dark}*{box-sizing:border-box}body{margin:0;font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#202b3a;background:#f6f8fb}main{max-width:760px;margin:64px auto;padding:40px;background:#fff;border:1px solid #dbe2eb;border-radius:16px}header{border-bottom:1px solid #dbe2eb;padding-bottom:20px;margin-bottom:28px}.eyebrow{font-size:.8rem;font-weight:650;text-transform:uppercase;letter-spacing:.12em;color:#536277}h1{font-size:2.25rem;line-height:1.18;letter-spacing:-.035em;margin:.35em 0}h2{font-size:1.15rem;line-height:1.4;margin:1.65em 0 .4em}a{color:#1558b0;text-underline-offset:3px}nav{display:flex;gap:24px;flex-wrap:wrap}footer{border-top:1px solid #dbe2eb;margin-top:32px;padding-top:20px;font-size:.9rem;color:#536277}p,ul{margin:.6em 0 1em}@media(max-width:800px){main{margin:16px;padding:24px;border-radius:12px}h1{font-size:1.9rem}}@media(prefers-color-scheme:dark){body{color:#e3e9f2;background:#111824}main{background:#182231;border-color:#344257}header,footer{border-color:#344257}.eyebrow,footer{color:#aebbd0}a{color:#8abbff}}</style>
+</head>
+<body><main>
+<header><div class="eyebrow">Private backup utility</div><h1>Backupctl</h1><p>Encrypted backups to an owner-controlled Google Drive.</p></header>
+<p>Backupctl is a personal, owner-operated backup utility. It prepares backups from selected sources on the owner’s Ubuntu system, encrypts backup contents locally with Duplicity, and uses rclone to store the resulting backup volumes in the owner’s Google Drive.</p>
+<p>This application is for the owner’s private use. It does not offer public registration or onboard third-party users.</p>
+<h2>Limited Google Drive access</h2>
+<p>The Google Drive integration requests the <code>drive.file</code> permission to create and manage its own backup files and folders. It is intended to use a dedicated backup namespace, rather than browse unrelated files already in the account.</p>
+<h2>Owner-controlled recovery</h2>
+<p>The owner controls which sources are backed up, the backup schedule and retention settings, and when backup data is restored or deleted.</p>
+<nav aria-label="More information"><a href="privacy.html">Privacy notice</a><a href="https://github.com/fdk0/backupctl-auth-pages/issues">Contact the owner</a></nav>
+<footer>These pages describe the application; they do not provide access to backups or credentials. For contact, use repository issues without posting secrets or private backup data.</footer>
+</main></body>
+</html>
